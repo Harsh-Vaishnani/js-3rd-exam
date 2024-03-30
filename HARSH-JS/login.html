@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      form {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="email">Email :</label>
+      <input type="email" id="email" /><br /><br />
+      <label for="password">Password :</label>
+      <input type="password" id="password" /><br /><br />
+      <button id="btn">Submit👍</button>
+    </form>
+    <a href="signup.html">Signup</a>
+  </body>
+</html>
+<script>
+  let b = document.getElementById("email");
+  let c = document.getElementById("password");
+  let d = document.getElementById("btn");
+  d.addEventListener("click", abc);
+  function abc(e) {
+    e.preventDefault();
+    let em = b.value;
+    let ps = c.value;
+    let final = JSON.parse(localStorage.getItem("one"));
+    if (final[0].email == em && final[0].password == ps) {
+      window.location.href = "index.html";
+    } else {
+      alert("Wrong Data");
+    }
+  }
+</script>
