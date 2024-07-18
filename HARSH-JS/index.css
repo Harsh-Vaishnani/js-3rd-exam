@@ -1,0 +1,30 @@
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #main > div {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(250, 250, 210, 0.631);
+  }
+
+  nav {
+    display: flex;
+    background-color: blanchedalmond;
+  }
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+  }
+  li {
+    list-style: none;
+    padding: 20px;
+  }
+  .filter {
+    font-size: 18px;
+    cursor: pointer;
+  }
